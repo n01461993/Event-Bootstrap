@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Protest+Strike&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Sticky Navbar with dark theme-->
+    <nav class="navbar bg-dark border-bottom border-body fixed-top" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/logo.png">
+            <img src="/logo.png" alt="Bootstrap" width="72" height="80">
+            Speak Your Mind!
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Schedule</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tickets</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown link
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Speakers</a></li>
+                  <li><a class="dropdown-item" href="#">Directions</a></li>
+                  <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--Carousel to showcase images from the conference-->
+      <section>
+        <div class="header">
+            <div>
+                <div class="img">
+                    <div id="carouselExampleCaptions" class="carousel slide">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="/venue.jpg" class="d-block w-100" alt="venue">
+                            <div class="carousel-caption d-sm-block">
+                              <h5 class="text-danger">Live Speakers</h5>
+                              <p class="text-dark">Hear from industry professionals on how to network properly</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="/notes.jpg" class="d-block w-100" alt="notes">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5 class="text-danger">Industry Knowledge</h5>
+                              <p class="text-dark">Gain insight on how to succeed in your field</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="/network.jpg" class="d-block w-100" alt="network">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5 class="text-danger">Networking Sessions</h5>
+                              <p class="text-dark">Get a chance to network with your peers</p>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+            </div>
+        </div>
+    <!--Card section to display speakers and background info-->
+    </section>
+    <section id="speakers" class="bg-dark pb-4">
+        <div class="container-lg">
+            <div class="text-center">
+                <h1 class="text-white mt">Meet Your Speakers</h1>
+            </div>
+            
+            <div class="row my-5 justify-content-center">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="/woman.jpg"></img>
+                            <div class="card-body">
+                            <h1 class="card-title">Joan Smith</h1>
+                            <h5 class="card-subtitle">Web Developer</h5>
+                            <div class="card-text">
+                            <p>Joan has over 5 years of industry experience, and reached high positions very quickly with her stellar networking skills. She will teach how to better communicate with industry professionals, to reach your job goals sooner than expected.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="/man.jpg"></img>
+                            <div class="card-body">
+                            <h1 class="card-title">Mark Brown</h1>
+                            <h5 class="card-subtitle">Investment Specialist</h5>
+                            <div class="card-text">
+                            <p>Mark has navigated the financial sector for over 15 years, and taken the industry by storm. The skills he provides will assist you in gaining the experience to work in finance, but also in other aspects of life. Come see him give a lecture.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="/laughing.jpg"></img>
+                            <div class="card-body">
+                            <h1 class="card-title">David Wright</h1>
+                            <h5 class="card-subtitle">Marketing Manager</h5>
+                            <div class="card-text">
+                            <p>David has revolutionized the marketing industry over the last decade with big projects for SONY, Addidas, and Starbucks. Gain the knowledge on how he navigates the business world and how to effectively communicate with others to build yourself up.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Button trigger modal -->
+    </section>    
+    
+  <div class="container">
+    <div class="text-center">
+        <h1>Get Your Tickets Now!</h1>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-8 text-center mt-4">
+        <button type="button" class="btn btn-dark" data-bs-theme="dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            Buy Now!
+          </button>
+        </div>  
+          <!-- Modal -->
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title text-danger fs-5" id="staticBackdropLabel">Networking Convention</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Join us on April 30, 2024 at the Toronto Metro Convention Centre for the 2024 Networking Convention.<br>
+                  Hours: 8:00am - 4:30pm <br>
+                  Tickets:<br>
+                  $35 Early Bird (March 29th - April 7th)<br>
+                  $45 Regualar Admission<br>
+                  <br>  
+                  Address: 255 Front St W, Toronto, ON M5V 2W6
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-dark" href="https://www.ticketmaster.ca/">Get Tickets</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>  
+<!--Form input to receive feedback-->
+<div class="row justify-content-center">
+    <div class="col-md-6 justify-content-center mt-5">
+        <div class="mb-3 text-center">
+            <label for="exampleFormControlInput1" class="form-label">Submit your questions</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="mb-3 justify-content-center">
+        <label for="exampleFormControlTextarea1" class="form-label">Write our question here</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <div class="col-md-12 text-center">
+        <input class="btn btn-dark justify-content-center" type="submit" value="Submit">
+        </div>
+    </div>      
+</div>  
+        
+    </section>
+
+    <footer class="text-center mt-3">
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-twitter-x"></i>
+        <i class="bi bi-facebook"></i>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
